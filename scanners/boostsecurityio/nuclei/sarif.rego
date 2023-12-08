@@ -5,7 +5,7 @@ import future.keywords.in
 
 map_result(r) := o if {
 	o := {
-		"ruleId": "CWE-352",
+		"ruleId": r.ruleId,
 		"level": "warning",
 		"message": r.message,
 		"locations": [{"physicalLocation": {"region": {"snippet": {"text": "sup"}}, "artifactLocation": {"uri": "http://localhost:3000/"}}}],
