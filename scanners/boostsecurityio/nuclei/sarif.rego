@@ -3,7 +3,6 @@ package sarif
 import future.keywords.if
 import future.keywords.in
 
-print("INPUT:", input)
 map_result(r) := o if {
 	o := {
 		"ruleId": r.ruleId,
