@@ -32,7 +32,7 @@ jobs:
       - name: dast/nuclei
         uses: boostsecurityio/boostsec-scanner-github@v4
         env:
-          TARGET_URL: "https://api.dev.boostsec.io/policy/graphql"
+          TARGET_URL: "https://api.dev.boostsec.io/account/graphql"
         with:
           api_token: ${{ secrets.BOOST_API_DEV_TOKEN }}
           api_endpoint: https://api.dev.boostsec.io
@@ -44,7 +44,7 @@ jobs:
         if: ${{ inputs.nuclei }}
         uses: projectdiscovery/nuclei-action@main
         with:
-          target: 'https://api.dev.boostsec.io/policy/graphql'
+          target: 'https://api.dev.boostsec.io/account/graphql'
 
       - name: GitHub Workflow artifacts
         uses: actions/upload-artifact@v2
