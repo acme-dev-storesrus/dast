@@ -36,7 +36,7 @@ jobs:
         with:
           api_token: ${{ secrets.BOOST_API_DEV_TOKEN }}
           api_endpoint: https://api.dev.boostsec.io
-          registry_module: boostsecurityio/nuclei
+          registry_module: dast/nuclei
           additional_args: --registry .
           log_level: DEBUG
 
