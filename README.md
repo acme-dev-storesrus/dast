@@ -10,7 +10,6 @@ npm i
 node index.js
 ```
 
-
 The application should be available at http://localhost:3000/
 
 ### `gql-api`
